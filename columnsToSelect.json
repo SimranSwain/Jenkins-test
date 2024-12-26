@@ -1,6 +1,6 @@
 [
   {
-    "table": "mtrans_file",
+    "table": "mtrans__file",
     "columns": "trs_acno,trs_ihno,trs_batchclosedt,trs_trno,trs_trtype,trs_branch,trs_active,trs_purred,trs_scheme,trs_plan,trs_cramt,trs_trdt,trs_fund,trs_option,trs_navdt,trs_agent,trs_remarks,trs_regslno,trs_broker,trs_enddt,trs_processdt,trs_dbunits,trs_nav,trs_endby,trs_dbamt,trs_subtrtype,trs_timestamp,trs_crunits,trs_entdt"
   },
   {
