@@ -1,0 +1,170 @@
+[
+  {
+    "table": "mtrans_file",
+    "columns": "trs_acno,trs_ihno,trs_batchclosedt,trs_trno,trs_trtype,trs_branch,trs_active,trs_purred,trs_scheme,trs_plan,trs_cramt,trs_trdt,trs_fund,trs_option,trs_navdt,trs_agent,trs_remarks,trs_regslno,trs_broker,trs_enddt,trs_processdt,trs_dbunits,trs_nav,trs_endby,trs_dbamt,trs_subtrtype,trs_timestamp,trs_crunits,trs_entdt"
+  },
+  {
+    "table": "kbolt_dtrdata",
+    "columns": "dd_ihno,dd_fund,dd_scheme,dd_plan,dd_acno,dd_trtype,dd_invexistflag,dd_pangno,dd_krarefno,dd_guardpan,dd_dcr,dd_krarefno2,dd_pangno3,dd_krarefno1,dd_pangno2,dd_mohold,dd_category,dd_mohstatus,dd_joinholder1,dd_joinholder2,dd_guardpan,dd_fname,dd_mname,dd_lname,dd_genguardian,dd_invdob,dd_bnkacctype,dd_gkrarefno,dd_bnkacno,dd_bnkacname,dd_ifcscode,dd_nominee,dd_distributor,dd_mobileno,dd_email,dd_2favalidflag,dd_nominee2,dd_nominee3"
+  },
+  {
+    "table": "appl1",
+    "columns": "app_acno as app1_acno,app_status as app1_status,app_pangno as app1_pangno,app_krarefno as app1_krarefno,app_pangno3 as app1_pangno3,app_krarefno2 as app1_krarefno2,app_holdmode as app1_holdmode,app_pangno2 as app1_pangno2,app_krarefno1 as app1_krarefno1, app_gpangno as app1_gpangno, app_gkrarefno as app1_gkrarefno, app_ihno as app1_ihno,app_category as app1_category,app_recdt as app1_recdt,app_guard as app1_guard,app_gckyc as app1_gckyc,app_ckyc1 as app1_ckyc1 , app_fund as app1_fund , ar_h_commit_timestamp"
+  },
+  {
+    "table": "reject_file",
+    "columns": "rf_rtrno,rf_trno,rf_fund,rf_scheme,rf_plan,rf_acno,rf_rbranch,rf_branch"
+  },
+  {
+    "table": "appl2",
+    "columns": "app_fund as app2_fund,app_acno as app2_acno,app_addtype as app2_addtype,app_add1 as app2_add1,app_city as app2_city,app_state as app2_state,app_add3 as app2_add3,app_email as app2_email,app_mobile as app2_mobile , app_emailrelationship as app2_emailrelationship , app_mobilerelationship as app2_mobilerelationship,app_add2 as app2_add2 ,app_country as app2_country, ar_h_commit_timestamp"
+  },
+  {
+    "table": "appl3",
+    "columns": "app_fund as app3_fund,app_acno as app3_acno,app_3name as app3_3name,app_2name as app3_2name,ar_h_commit_timestamp as appl3_ar_h_commit_timestamp,app_1dob as app3_1dob,app_fname as app3_fname,app_mname as app3_mname,app_lname as app3_lname, ar_h_commit_timestamp"
+  },
+  {
+    "table": "ac_master",
+    "columns": "am_acno,am_scheme,am_plan,am_actype,am_option"
+  },
+  {
+    "table": "fund_master",
+    "columns":"fm_scheme,fm_schdesc,fm_plan,fm_plandesc,fm_sebischemesubcategory,fm_mcrid,fm_plnmode,fm_option,fm_fund,fm_fundname,fm_navschcat,fm_maturitydt"
+  },
+  {
+    "table": "status_master",
+    "columns": "sm_status,sm_desc,sm_fund,sm_category"
+  },
+  {
+    "table": "mode_of_holding",
+    "columns": "moh_code,moh_desc,moh_fund"
+  },
+  {
+    "table": "kyc_response",
+    "columns": "kr_refno,kr_fund,kr_receivedate,kr_kycmode,kr_ipvflag,kr_kycstatus,kr_rejreason,kr_email,kr_mobileno,kr_status,kr_dob"
+  },
+  {
+    "table": "kyc_unsolitresponse",
+    "columns": "ku_refno,ku_fund,ku_receivedate,ku_kycmode,ku_ipvflag,ku_kycstatus,ku_rejreason, ku_email, ku_mobileno,ku_status,ku_dob"
+  },
+  {
+    "table": "kyc_cvl",
+    "columns": "ku_fund as kuc_fund, ku_dob as kuc_dob ,ku_refno as kuc_refno,ku_receivedate as kuc_receivedate,ku_email as kuc_email,ku_status as kuc_status,ku_mobileno as kuc_mobileno,ku_kycmode as kuc_kycmode,ku_ipvflag as kuc_ipvflag,ku_kycstatus as kuc_kycstatus,ku_rejreason as kuc_rejreason"
+  },
+  {
+    "table": "panverificationfile",
+    "columns": "pan,itremarks,fund,fullnameit,verifieddate,verifiedflag,lstupddateit,ar_h_commit_timestamp"
+  },
+  {
+    "table": "kbolt_dbo_panverificationfile",
+    "columns": "pan as kpan,fund as kfund,verifieddate as kverifieddate,itremarks as kitremarks,fullnameit as kfullnameit ,verifiedflag as kverifiedflag"
+  },
+  {
+    "table": "general_master",
+    "columns": "gm_acno,gm_scheme,gm_plan,gm_bankactype,gm_type,gm_bnkno,gm_ifsccode,gm_name,gm_nomineeintent,gm_fund,gm_bname, ar_h_commit_timestamp,gm_ratio,gm_dob"
+  },
+  {
+    "table": "trans_file",
+    "columns": "trs_fund as trs1_fund,trs_scheme as trs1_scheme,trs_plan as trs1_plan,trs_acno as trs1_acno,trs_branch as trs1_branch,trs_trno as trs1_trno,trs_purdt as trs1_purdt,trs_trtype as trs1_trtype,trs_batchclosedt as trs1_batchclosedt,trs_purtrtype,trs_pbranch,trs_pslno,trs_ptrno"
+  },
+  {
+    "table": "transactioncharge",
+    "columns": "tc_acno,tc_trno,tc_fund,tc_scheme,tc_plan,tc_branch,tc_agent,tc_tranchrgs,tc_ihno,tc_grossamt,tc_trdt,ar_h_commit_timestamp,tc_regslno"
+  },
+  {
+    "table": "ab_master",
+    "columns": "abm_agent,abm_pangir,abm_email,abm_mobilephone,abm_phone, ar_h_commit_timestamp"
+  },
+  {
+    "table": "arn_transactionoptmaster",
+    "columns": "at_arncode,at_mcrid,at_opttype,at_fromdt,at_todt"
+  },
+  {
+    "table": "stampdutytransactions",
+    "columns": "sd_acno,sd_fund,sd_scheme,sd_plan,sd_trno,sd_branch,sd_dutycharges"
+  },
+  {
+    "table": "preprocessrejection",
+    "columns": "scheme,pln,acno,branch,trno,fund"
+  },
+  {
+    "table": "special_options",
+    "columns": "so_fund,so_acno,so_itpan1verfy,so_gitpanverfy,so_kycomplaint1"
+  },
+  {
+    "table": "sipmaster",
+    "columns": "sip_scheme,sip_plan,sip_acno,sip_fund,sip_regdt,sip_startdate,sip_enddt,sip_noinstall,sip_frequency,sip_regslno,sip_ihno,sip_agent,sip_sbroker,sip_branch,sip_trtype,sip_subtrtype,sip_trdate,sip_remarks,sip_tranchargemultiflag,sip_tranchargeeligibleflag"
+  },
+  {
+    "table": "cheque_master",
+    "columns": "cm_chqtype,cm_fund,cm_scheme,cm_plan,cm_branch,cm_trno,cm_acno,cm_tpvflag,cm_chqamt,ar_h_commit_timestamp,cm_cleardt,cm_chqbankacno,cm_chqifsc,cm_tpvsubflag"
+  },
+  {
+    "table": "kbolt_dbo_mfu_sipmaster",
+    "columns": "mfu_fund,mfu_scheme,mfu_plan,mfu_folio_no,mfu_reg_no,mfu_reg_date,mfu_start_date,mfu_end_date,mfu_total_inst,mfu_sys_freq"
+  },
+  {
+    "table": "div_trac",
+    "columns": "dt_acno,dt_fund,dt_scheme,dt_plan,dt_branch,dt_trno,dt_tdsrate,dt_trtype,dt_trdt,dt_grossamt,dt_tdsamt,dt_divstatus,dt_nav,dt_netunits,dt_netamt"
+  },
+  {
+    "table": "kbolt_dbo_it_filereturn",
+    "columns": "aadharlink,uploaddate,highertds,pan as kitpan,ar_h_commit_timestamp"
+  },
+  {
+    "table": "category_master",
+    "columns": "cat_fund,cat_code,cat_desc"
+  },
+  {
+    "table": "pan_formgh",
+    "columns": "pf_panno,pf_validfrom,pf_validto,pf_recddt,pf_formflag,pf_entdt,pf_uin"
+  },
+  {
+    "table": "nct_history",
+    "columns": "nh_fund,nh_acno,nh_nct,nh_field,nh_enddt,nh_entdt,nh_new,nh_old"
+  },
+  {
+    "table": "stoppayments",
+    "columns": "sp_acno"
+  },
+   {
+    "table": "branch_master",
+    "columns": "bm_branch,bm_category,ar_h_commit_timestamp"
+  },
+  {
+    "table": "kbolt_dbo_kbolt_dtrdata_ext",
+    "columns": "dd_ihno,dd_fund,dd_nominee1percentage,dd_nominee2percentage,dd_nominee3percentage,dd_nompercent"
+  },
+  {
+    "table": "mfdweb_dbo_cdms_consolidatedagentmaster",
+    "columns": "ca_pan,ca_email,ca_email2,ca_email3,ca_email4,ca_email5,ca_mobileno,ca_mobile2,ca_mobile3,ca_mobile4,ca_mobile5"
+  },
+  {
+    "table": "kbolt_dbo_euinrepository",
+    "columns": "pan,email,email2,email3,email4,email5,mobile_no,mobile2,mobile3,mobile4,mobile5"
+  },
+  {
+    "table": "karvymfs_dbo_ria_master",
+    "columns": "pan,phone,mobileno,email"
+  },
+  {
+    "table": "kbolt_dbo_apt_pennydropverification",
+    "columns": "acno,trno,branch,pln,scheme,pd_respons,finalsatus"
+  },
+  {
+    "table": "kbolt_dbo_panubodetails",
+    "columns": "pan"
+  },
+  {
+    "table": "panubodetails",
+    "columns": "pan"
+  },
+  {
+    "table": "holiday_master",
+    "columns": "hm_hdate"
+  },
+  {
+    "table": "chequemaster_audittrial",
+    "columns": "ca_fund,ca_scheme,ca_plan,ca_trno,ca_acno,ca_branch,ca_cleareddt"
+  }
+]
